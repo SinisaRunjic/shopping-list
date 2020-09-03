@@ -8,6 +8,9 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 const ShoppingList = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState({});
+    const [autentication, setAutentication] = useState({});
+    const [token, setToken] = useState();
     useEffect(() => {
         axios.get('/api/items')
             .then(res => {

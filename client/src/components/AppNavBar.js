@@ -10,6 +10,8 @@ import {
     NavbarText,
     Container
 } from 'reactstrap'
+import LoginModal from './LoginModal';
+import RegisterModal from './RegisterModal';
 
 
 const AppNavBar = () => {
@@ -31,6 +33,12 @@ const AppNavBar = () => {
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/">GitHub</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <LoginModal />
+                            </NavItem>
+                            <NavItem>
+                                <RegisterModal />
                             </NavItem>
                         </Nav>
                         <NavbarText>Simple Text</NavbarText>
