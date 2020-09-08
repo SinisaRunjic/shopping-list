@@ -15,7 +15,7 @@ app.use(express.json())
 // DB config
 const db = config.get('mongoURI');
 
-// Connect to Mongo
+// Connect to MongoDB
 mongoose
     .connect(db, {
         useNewUrlParser: true,
